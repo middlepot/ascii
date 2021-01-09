@@ -56,7 +56,7 @@ a:hover {cursor: url(https://i.imgur.com/QqvjrpH.png), progress;
 ::-webkit-scrollbar {
 width: 4px;
 height: 4px;
-background: #fff;
+background: transparent;
 }
 ::-webkit-scrollbar-thumb {
 background-color: #fff;
@@ -68,7 +68,27 @@ border: 1px dotted #bdaeaf;
 
 </head>
 
+<style>
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+@media screen and (max-width: 1000px) and (orientation: portrait){
+#everything { position: absolute; zoom: 140%;
+	left:680px;
+	top:-40px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+}
+@media screen and (max-width: 1000px) and (orientation: landscape){
+#everything { position: absolute; zoom: 80%; left:-60px; top:10px;}
+}
+</style>
 
+<div id="everything">
 
 
 
@@ -154,7 +174,7 @@ document.execCommand("copy");
 
 
 
-<div id="stuff" style="display: none; border:none; overflow-x:hidden; position:absolute; top:90px; left:330px; width:150px; height:190px; line-height:13px; line-break: auto;">
+<div id="stuff" style="display: none; border:none; overflow-x:hidden; overflow: auto; overflow: scroll; position:absolute; top:90px; left:330px; width:150px; height:190px; line-height:13px; line-break: auto;">
 
 <b>cute symbols :</b><br><br>
 <div style="width:95px;">
